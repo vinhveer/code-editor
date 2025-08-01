@@ -24,17 +24,17 @@ class ThemeManager {
                 name: 'Light',
                 colors: {
                     'vscode-bg': '#ffffff',
-                    'vscode-sidebar': '#f3f3f3',
-                    'vscode-tab': '#e8e8e8',
+                    'vscode-sidebar': '#f8f8f8',
+                    'vscode-tab': '#ededed',
                     'vscode-tab-active': '#ffffff',
-                    'vscode-tab-hover': '#e0e0e0',
-                    'vscode-border': '#d4d4d4',
-                    'vscode-text': '#333333',
-                    'vscode-text-dim': '#666666',
-                    'vscode-accent': '#0078d4',
+                    'vscode-tab-hover': '#e8e8e8',
+                    'vscode-border': '#c8c8c8',
+                    'vscode-text': '#1f1f1f',
+                    'vscode-text-dim': '#616161',
+                    'vscode-accent': '#0066cc',
                     'vscode-input': '#ffffff',
-                    'vscode-button': '#0078d4',
-                    'vscode-button-hover': '#106ebe'
+                    'vscode-button': '#0066cc',
+                    'vscode-button-hover': '#005bb5'
                 },
                 monacoTheme: 'vs'
             }

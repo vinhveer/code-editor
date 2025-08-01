@@ -32,17 +32,17 @@
 
         .theme-light {
             --vscode-bg: #ffffff;
-            --vscode-sidebar: #f3f3f3;
-            --vscode-tab: #e8e8e8;
+            --vscode-sidebar: #f8f8f8;
+            --vscode-tab: #ededed;
             --vscode-tab-active: #ffffff;
-            --vscode-tab-hover: #e0e0e0;
-            --vscode-border: #d4d4d4;
-            --vscode-text: #333333;
-            --vscode-text-dim: #666666;
-            --vscode-accent: #0078d4;
+            --vscode-tab-hover: #e8e8e8;
+            --vscode-border: #c8c8c8;
+            --vscode-text: #1f1f1f;
+            --vscode-text-dim: #616161;
+            --vscode-accent: #0066cc;
             --vscode-input: #ffffff;
-            --vscode-button: #0078d4;
-            --vscode-button-hover: #106ebe;
+            --vscode-button: #0066cc;
+            --vscode-button-hover: #005bb5;
         }
 
         .vscode-bg { background-color: var(--vscode-bg); }
@@ -54,9 +54,59 @@
         .vscode-text { color: var(--vscode-text); }
         .vscode-text-dim { color: var(--vscode-text-dim); }
         .vscode-accent { color: var(--vscode-accent); }
-        .vscode-input { background-color: var(--vscode-input); }
-        .vscode-button { background-color: var(--vscode-button); }
+        .vscode-input { 
+            background-color: var(--vscode-input); 
+            border: 1px solid var(--vscode-border);
+        }
+        .vscode-button { 
+            background-color: var(--vscode-button);
+            border: none;
+        }
         .vscode-button:hover { background-color: var(--vscode-button-hover); }
+        
+        /* Modal improvements */
+        .modal-content {
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+        }
+        
+        .theme-light .modal-content {
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+        }
+        
+        .theme-light .error-message {
+            background-color: #fef2f2 !important;
+            border-color: #fecaca !important;
+        }
+        
+        .theme-light .error-message pre {
+            color: #991b1b !important;
+        }
+        
+        /* Light theme specific improvements */
+        .theme-light .vscode-input {
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        }
+        
+        .theme-light .vscode-input:focus {
+            outline: 2px solid var(--vscode-accent);
+            outline-offset: -2px;
+        }
+        
+        .theme-light .vscode-button {
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+        }
+        
+        .theme-light .vscode-button:hover {
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+        }
+        
+        .theme-light .vscode-tab-active {
+            border-bottom: 2px solid var(--vscode-accent);
+        }
+        
+        .theme-light .vscode-sidebar {
+            border: 1px solid var(--vscode-border);
+        }
     </style>
     <script>
         tailwind.config = {
@@ -106,7 +156,7 @@
                     <div class="px-3 py-2 vscode-tab border-b vscode-border">
                         <h3 class="text-xs font-medium vscode-text uppercase tracking-wide">Input</h3>
                     </div>
-                    <textarea id="input" class="flex-1 p-3 vscode-input vscode-text border-none outline-none resize-none font-mono text-sm" placeholder="Enter input here..."></textarea>
+                    <textarea id="input" class="flex-1 p-3 vscode-input vscode-text outline-none resize-none font-mono text-sm" placeholder="Enter input here..."></textarea>
                 </div>
 
                 <!-- Output Section (1/2) -->
